@@ -115,4 +115,4 @@ def random_tests():
     def tests_random():
         testCases = generate()
         for num, prime in testCases:
-            test.assert_equals(is_prime(num), prime)
+            test.assert_equals(is_prime(num), prime) 
