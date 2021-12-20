@@ -45,16 +45,6 @@ print(groups_per_user({"local": ["admin", "userA"],
 		"public":  ["admin", "userB"],
 		"administrator": ["admin"] }))
 
-def email_list(domains):
-	emails = []
-	for group,users in domains.items():
-	  for user in users:
-	    emails.append(user + "@"+group)
-	return(emails)
-
-print(email_list({"gmail.com": ["clark.kent", "diana.prince", "peter.parker"], "yahoo.com": ["barbara.gordon", "jean.grey"], "hotmail.com": ["bruce.wayne"]}))
-
-
 def add_prices(basket):
 	# Initialize the variable that will be used for the calculation
 	total = 0
@@ -75,3 +65,12 @@ print(add_prices(groceries)) # Should print 28.44
 wardrobe = {'shirt': ['red', 'blue', 'white'], 'jeans': ['blue', 'black']}
 new_items = {'jeans': ['white'], 'scarf': ['yellow'], 'socks': ['black', 'brown']}
 print(wardrobe.update(new_items))
+
+def email_list(domains):
+    emails = []
+    for group,users in domains.items():
+        for user in users:
+            emails.append(user + "@"+group)
+    return emails
+
+print(email_list({"gmail.com": ["clark.kent", "diana.prince", "peter.parker"], "yahoo.com": ["barbara.gordon", "jean.grey"], "hotmail.com": ["bruce.wayne"]}))

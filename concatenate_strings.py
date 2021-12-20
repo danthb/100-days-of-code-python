@@ -1,4 +1,4 @@
-
+# concatenate two strings
 def numberDays(month, mountDays):
     print(month + " has " + str(mountDays) + " days.")
 
