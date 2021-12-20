@@ -13,8 +13,6 @@ for index,filename in enumerate(filenames):
 
 print(newfilenames) 
 
-
-
 def pig_latin(text):
   say = ""
   new_sentence = []
